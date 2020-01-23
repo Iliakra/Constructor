@@ -14,44 +14,56 @@ test('should return Error with incorrect insert of type', () => {
 });
 
 test('if type is Bowman', () => {
-  let obj = new Character('Trey' , 'Bowman');
+  const obj = new Character('Trey', 'Bowman');
   const received = obj;
-  const expected = {attackDefence: "Bowman: 25/25", health: 100, level: 1, name: "Trey", type: "Bowman"}
+  const expected = {
+    attackDefence: 'Bowman: 25/25', health: 100, level: 1, name: 'Trey', type: 'Bowman',
+  };
   expect(received).toEqual(expected);
 });
 
 test('if type is Swordsman', () => {
-  let obj = new Character('Trey' , 'Swordsman');
+  const obj = new Character('Trey', 'Swordsman');
   const received = obj;
-  const expected = {attackDefence: "Swordsman: 40/10", health: 100, level: 1, name: "Trey", type: "Swordsman"}
+  const expected = {
+    attackDefence: 'Swordsman: 40/10', health: 100, level: 1, name: 'Trey', type: 'Swordsman',
+  };
   expect(received).toEqual(expected);
 });
 
 test('if type is Magician', () => {
-  let obj = new Character('Trey' , 'Magician');
+  const obj = new Character('Trey', 'Magician');
   const received = obj;
-  const expected = {attackDefence: "Magician: 10/40", health: 100, level: 1, name: "Trey", type: "Magician"}
+  const expected = {
+    attackDefence: 'Magician: 10/40', health: 100, level: 1, name: 'Trey', type: 'Magician',
+  };
   expect(received).toEqual(expected);
 });
 
 test('if type is Daemon', () => {
-  let obj = new Character('Trey' , 'Daemon');
+  const obj = new Character('Trey', 'Daemon');
   const received = obj;
-  const expected = {attackDefence: "Daemon: 10/40", health: 100, level: 1, name: "Trey", type: "Daemon"}
+  const expected = {
+    attackDefence: 'Daemon: 10/40', health: 100, level: 1, name: 'Trey', type: 'Daemon',
+  };
   expect(received).toEqual(expected);
 });
 
 test('if type is Undead', () => {
-  let obj = new Character('Trey' , 'Undead');
+  const obj = new Character('Trey', 'Undead');
   const received = obj;
-  const expected = {attackDefence: "Undead: 25/25", health: 100, level: 1, name: "Trey", type: "Undead"}
+  const expected = {
+    attackDefence: 'Undead: 25/25', health: 100, level: 1, name: 'Trey', type: 'Undead',
+  };
   expect(received).toEqual(expected);
 });
 
 
 test('if type is Zombie', () => {
-  let obj = new Character('Trey' , 'Zombie');
+  const obj = new Character('Trey', 'Zombie');
   const received = obj;
-  const expected = {attackDefence: "Zombie: 40/10", health: 100, level: 1, name: "Trey", type: "Zombie"}
+  const expected = {
+    attackDefence: 'Zombie: 40/10', health: 100, level: 1, name: 'Trey', type: 'Zombie',
+  };
   expect(received).toEqual(expected);
 });
